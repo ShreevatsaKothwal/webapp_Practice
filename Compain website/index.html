@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complain website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="college.jpg" alt="CampusVoice Logo">
+            CampusVoice
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta"><button>Contact</button></a>
+    </header>
+
+
+    <main class="problem_section">
+        <h2 id="popup_title">Report a Problem</h2>
+
+        <div class="problem_box">
+            <div class="problem-box" onclick="openpopup('Hostel Services')">Hostel Services</div>
+            <div class="problem-box" onclick="openpopup('Mess Services')">Mess Services</div>
+            <div class="problem-box" onclick="openpopup('Academics')">Academics</div>
+            <div class="problem-box" onclick="openpopup('Regarding Events')">Regarding Events</div>
+            <div class="problem-box" onclick="openpopup('Ragging')">Ragging</div>
+            <div class="problem-box" onclick="openpopup('WiFi & Tech Support')">WiFi & Tech Support </div>
+
+        </div>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup_box">
+
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup_title">Submit Your Complaint</h2>
+
+             <!-- Input field for complaint -->
+            <textarea id="popup_input" placeholder="Describe your issue..."></textarea> 
+            
+             <!-- Submit Button -->
+            <button class="submit_btn" onclick="submitComplaint()">Submit</button>
+
+        </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
