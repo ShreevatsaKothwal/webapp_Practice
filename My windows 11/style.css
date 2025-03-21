@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+   
+}
+.icons{
+    margin-top: 10px;
+}
+
+.icon-adjustment{
+    margin-left: 12px;
+}
+
+.video-container{
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    height: 100%; /* Adjust to your preferred height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+.startmenu{
+    position: absolute;
+    bottom: -650px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img {
+    border-radius: 8px;
+}
+
+
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    z-index: 20;
+}
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}
+
+
